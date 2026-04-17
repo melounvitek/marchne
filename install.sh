@@ -52,6 +52,14 @@ install_homebrew() {
   setup_brew_shellenv
 }
 
+install_opencode() {
+  if command -v opencode >/dev/null 2>&1 || [[ -x "$HOME/.opencode/bin/opencode" ]]; then
+    return
+  fi
+
+  curl -fsSL https://opencode.ai/install | bash
+}
+
 copy_home() {
   local source_dir="$1/home"
 
@@ -71,6 +79,7 @@ main() {
   install_homebrew
 
   brew bundle --file="$repo/Brewfile"
+  install_opencode
   copy_home "$repo"
   configure_git
   bash "$repo/macos.sh"
