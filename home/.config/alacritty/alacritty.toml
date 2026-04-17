@@ -1,0 +1,16 @@
+[font]
+normal = { family = "DroidSansM Nerd Font", style = "Regular" }
+size = 16.0
+
+[window]
+decorations = "Buttonless"
+padding = { x = 8, y = 8 }
+dynamic_padding = true
+opacity = 0.96
+blur = true
+
+[keyboard]
+bindings = [
+  { key = "Left", mods = "Option", chars = "\u001bb" },
+  { key = "Right", mods = "Option", chars = "\u001bf" },
+]
