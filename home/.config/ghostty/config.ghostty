@@ -8,6 +8,7 @@ background-opacity = 0.96
 background-blur = true
 
 macos-titlebar-style = hidden
+shell-integration-features = ssh-env,ssh-terminfo
 
 keybind = alt+left=esc:b
 keybind = alt+right=esc:f
