@@ -62,9 +62,18 @@ install_opencode() {
 
 copy_home() {
   local source_dir="$1/home"
+  local ghostty_xdg_config="$HOME/.config/ghostty/config.ghostty"
+  local ghostty_macos_config="$HOME/Library/Application Support/com.mitchellh.ghostty/config.ghostty"
 
   mkdir -p "$HOME/Applications/Chrome Apps.localized"
-  ditto "$source_dir" "$HOME"
+  rsync -a --exclude '/.config/ghostty/config.ghostty' "$source_dir/" "$HOME/"
+
+  if [[ -s "$ghostty_xdg_config" || -s "$ghostty_macos_config" ]]; then
+    return
+  fi
+
+  mkdir -p "$(dirname "$ghostty_xdg_config")"
+  cp "$source_dir/.config/ghostty/config.ghostty" "$ghostty_xdg_config"
 }
 
 configure_git() {

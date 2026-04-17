@@ -108,7 +108,7 @@ on-mode-changed = []
     # end tell'
     # '''
 
-    cmd-enter = 'exec-and-forget "/Applications/Alacritty.app/Contents/MacOS/alacritty" msg create-window >/dev/null 2>&1 || open -na Alacritty'
+    cmd-enter = 'exec-and-forget open -na Ghostty'
     cmd-shift-b = 'exec-and-forget open -a "Google Chrome"'
     cmd-shift-e = 'exec-and-forget open -na Marta'
     cmd-shift-o = 'exec-and-forget open -a Obsidian'

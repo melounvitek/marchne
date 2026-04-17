@@ -22,7 +22,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/melounvitek/archne_mac/main/
 - `~/.zshrc`
 - `~/.zprofile`
 - `~/.aerospace.toml`
-- `~/.config/alacritty/alacritty.toml`
+- `~/.config/ghostty/config.ghostty`
 - `~/.config/nvim/`
 - `~/Applications/Chrome Apps.localized/`
 - OpenCode installation via `https://opencode.ai/install`
@@ -33,5 +33,6 @@ bash <(curl -fsSL https://raw.githubusercontent.com/melounvitek/archne_mac/main/
 ## Notes
 
 - The installer copies files from `home/` into `$HOME`.
+- The installer preserves any existing non-empty Ghostty config and only installs the repo default when no Ghostty config exists yet.
 - `borders` is installed from Homebrew and launched by AeroSpace from `~/.aerospace.toml`.
 - Some permissions and sign-ins remain manual. See `manual_steps.md`.

@@ -47,8 +47,8 @@ brew "felixkratz/formulae/borders"
 brew "teamookla/speedtest/speedtest"
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "nikitabobko/tap/aerospace"
-# GPU-accelerated terminal emulator
-cask "alacritty"
+# Platform-native terminal emulator
+cask "ghostty"
 cask "font-droid-sans-mono-nerd-font"
 # Extensible two-pane file manager
 cask "marta"
