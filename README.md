@@ -25,6 +25,8 @@ bash <(curl -fsSL https://raw.githubusercontent.com/melounvitek/archne_mac/main/
 - `~/.config/alacritty/alacritty.toml`
 - `~/.config/nvim/`
 - `~/Applications/Chrome Apps.localized/`
+- `EDITOR` and `VISUAL` set to `nvim`
+- Git `core.editor` set to `nvim`
 - Caps Lock to Escape remap in `macos.sh`
 
 ## Notes

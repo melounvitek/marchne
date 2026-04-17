@@ -59,6 +59,10 @@ copy_home() {
   ditto "$source_dir" "$HOME"
 }
 
+configure_git() {
+  git config --global core.editor nvim
+}
+
 main() {
   local repo
 
@@ -68,6 +72,7 @@ main() {
 
   brew bundle --file="$repo/Brewfile"
   copy_home "$repo"
+  configure_git
   bash "$repo/macos.sh"
 
   printf '\nManual steps:\n'
