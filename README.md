@@ -1,38 +1,30 @@
-# marchne
+# m-archne
 
-My one-command configurator for a clean macOS install.
+My one-command configurator for a clean macOS install. Like [Archne](https://github.com/melounvitek/archne/), but for Mac.
 
 ## Install
-
-From a local checkout:
-
-```bash
-bash install.sh
-```
-
-Remotely:
-
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/melounvitek/marchne/main/install.sh)
 ```
 
-## Included
+## Main features
+Includes preconfigured
+- tiling windows manager [AeroSpace](https://github.com/nikitabobko/AeroSpace) (with [Omarchy-like hotkeys](https://learn.omacom.io/2/the-omarchy-manual/53/hotkeys) for windows and workspaces navigation),
+- OhMyZSH,
+- Neovim,
+- Ghostty terminal,
+- OpenCode,
+- and many other cool Linux tools.
 
-- `Brewfile` with my basic Homebrew packages and casks
-- `~/.zshrc`
-- `~/.zprofile`
-- `~/.aerospace.toml`
-- `~/.config/ghostty/config.ghostty`
-- `~/.config/nvim/`
-- `~/Applications/Chrome Apps.localized/`
-- OpenCode installation via `https://opencode.ai/install`
+## System config changes
+
+After installation, your system will have this configured:
 - `EDITOR` and `VISUAL` set to `nvim`
 - Git `core.editor` set to `nvim`
-- Caps Lock to Escape remap in `macos.sh`
+- Caps Lock remapped to Escape (must-have for vim users!)
 
 ## Notes
 
 - The installer copies files from `home/` into `$HOME`.
 - The installer preserves any existing non-empty Ghostty config and only installs the repo default when no Ghostty config exists yet.
-- `borders` is installed from Homebrew and launched by AeroSpace from `~/.aerospace.toml`.
 - Some permissions and sign-ins remain manual. See `manual_steps.md`.
