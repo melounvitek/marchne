@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO_URL="${ARCHNE_MAC_REPO_URL:-https://github.com/melounvitek/archne_mac.git}"
+REPO_URL="${MARCHNE_REPO_URL:-https://github.com/melounvitek/marchne.git}"
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
 TEMP_DIR=""
 
@@ -20,8 +20,8 @@ repo_dir() {
   fi
 
   TEMP_DIR="$(mktemp -d)"
-  git clone --depth 1 "$REPO_URL" "$TEMP_DIR/archne_mac" >/dev/null
-  printf '%s\n' "$TEMP_DIR/archne_mac"
+  git clone --depth 1 "$REPO_URL" "$TEMP_DIR/marchne" >/dev/null
+  printf '%s\n' "$TEMP_DIR/marchne"
 }
 
 install_xcode_clt() {

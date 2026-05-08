@@ -1,4 +1,4 @@
-# archne_mac
+# marchne
 
 My one-command configurator for a clean macOS install.
 
@@ -13,7 +13,7 @@ bash install.sh
 Remotely:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/melounvitek/archne_mac/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/melounvitek/marchne/main/install.sh)
 ```
 
 ## Included
