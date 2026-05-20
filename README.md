@@ -13,7 +13,7 @@ Includes preconfigured
 - OhMyZSH,
 - Neovim,
 - Ghostty terminal,
-- OpenCode,
+- OpenCode and Pi,
 - and many other cool Linux tools.
 
 ## System config changes
