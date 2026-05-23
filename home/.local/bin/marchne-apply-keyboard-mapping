@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":30064771129,"HIDKeyboardModifierMappingDst":30064771113}]}' >/dev/null
