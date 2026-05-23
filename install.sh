@@ -88,6 +88,10 @@ configure_git() {
   git config --global core.editor nvim
 }
 
+restart_borders() {
+  brew services restart borders
+}
+
 main() {
   local repo
 
@@ -100,6 +104,7 @@ main() {
   install_pi
   copy_home "$repo"
   configure_git
+  restart_borders
   bash "$repo/macos.sh"
 
   printf '\nManual steps:\n'
