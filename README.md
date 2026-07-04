@@ -2,6 +2,8 @@
 
 My one-command configurator for a clean macOS install. Like [Archne](https://github.com/melounvitek/archne/), but for Mac.
 
+![m-archne desktop screenshot](assets/screenshot.png)
+
 ## Install
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/melounvitek/marchne/main/install.sh)
@@ -15,6 +17,18 @@ Includes preconfigured
 - Ghostty terminal,
 - OpenCode and Pi,
 - and many other cool Linux tools.
+
+## Day-to-day shortcuts
+
+AeroSpace uses these main shortcuts:
+- `Cmd + Arrow`: focus window in that direction
+- `Cmd + Shift + Arrow`: move the focused window in that direction
+- `Cmd + 1..9`: switch workspace
+- `Cmd + Option + 1..9`: move the focused window to a workspace
+- `Cmd + /`: switch between horizontal and vertical tiles
+- `Cmd + ,`: switch between horizontal and vertical accordion layout
+- `Cmd + Enter`: open Ghostty
+- `Cmd + Shift + ;`: enter AeroSpace service mode (`Esc` reloads config and returns to main mode)
 
 ## System config changes
 
