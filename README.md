@@ -15,7 +15,7 @@ Includes preconfigured
 - OhMyZSH,
 - Neovim,
 - Ghostty terminal,
-- OpenCode and Pi,
+- Pi,
 - and many other cool Linux tools.
 
 ## Day-to-day shortcuts

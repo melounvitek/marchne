@@ -52,14 +52,6 @@ install_homebrew() {
   setup_brew_shellenv
 }
 
-install_opencode() {
-  if command -v opencode >/dev/null 2>&1 || [[ -x "$HOME/.opencode/bin/opencode" ]]; then
-    return
-  fi
-
-  curl -fsSL https://opencode.ai/install | bash
-}
-
 install_pi() {
   if command -v pi >/dev/null 2>&1 || [[ -x "$HOME/.pi/bin/pi" ]]; then
     return
@@ -100,7 +92,6 @@ main() {
   install_homebrew
 
   brew bundle --file="$repo/Brewfile"
-  install_opencode
   install_pi
   copy_home "$repo"
   configure_git
