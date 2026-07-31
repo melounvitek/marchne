@@ -34,5 +34,6 @@ brew "teamookla/speedtest/speedtest"
 cask "nikitabobko/tap/aerospace"
 cask "ghostty"
 cask "font-droid-sans-mono-nerd-font"
+cask "codexbar"
 # Extensible two-pane file manager
 cask "marta"
