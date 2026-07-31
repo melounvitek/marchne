@@ -60,6 +60,15 @@ install_pi() {
   curl -fsSL https://pi.dev/install.sh | sh
 }
 
+trust_brew_dependencies() {
+  brew tap felixkratz/formulae
+  brew tap nikitabobko/tap
+  brew tap teamookla/speedtest
+  brew trust --formula felixkratz/formulae/borders
+  brew trust --cask nikitabobko/tap/aerospace
+  brew trust --formula teamookla/speedtest/speedtest
+}
+
 copy_home() {
   local source_dir="$1/home"
   local ghostty_xdg_config="$HOME/.config/ghostty/config.ghostty"
@@ -90,6 +99,7 @@ main() {
   install_xcode_clt
   repo="$(repo_dir)"
   install_homebrew
+  trust_brew_dependencies
 
   brew bundle --file="$repo/Brewfile"
   install_pi
